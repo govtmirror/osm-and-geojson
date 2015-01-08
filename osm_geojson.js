@@ -1,5 +1,8 @@
 /* jshint camelcase: false */
 
+if (typeof DOMParser !== 'undefined') {
+  DOMParser = require('xmldom').DOMParser;
+}
 var osm_geojson = {};
 
 osm_geojson.geojson2osm = function(geo, changeset, osmChange) {
