@@ -1,6 +1,6 @@
 /* jshint camelcase: false */
 
-if (typeof DOMParser !== 'undefined') {
+if (typeof DOMParser === 'undefined') {
   DOMParser = require('xmldom').DOMParser;
 }
 var osm_geojson = {};
